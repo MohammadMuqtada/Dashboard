@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined);
+    </style>
+  </head>
+  <body>
+<div id="webcrumbs"><div class="flex flex-col md:flex-row h-screen bg-neutral-50 font-sans text-gray-800 overflow-hidden">  
+    <div class="md:w-64 bg-white shadow-md md:h-full z-10 border-r border-gray-100"> 
+        <div class="flex items-center justify-between p-4 border-b border-gray-100"> 
+            <div class="flex items-center space-x-2"> 
+                <div class="w-8 h-8 bg-primary-600 rounded-md flex items-center justify-center text-white"> 
+                    <span class="material-symbols-outlined">shopping_bag</span> 
+                </div> 
+                <h1 class="font-bold text-lg">YanaStore</h1> 
+            </div> 
+            <button class="md:hidden"> 
+                <span class="material-symbols-outlined">menu</span> 
+            </button> 
+        </div> 
+        <nav class="p-2"> 
+            <ul class="space-y-1"> 
+                <li> 
+                    <a href="#" class="flex items-center space-x-3 text-primary-600 bg-primary-50 px-4 py-3 rounded-lg">
+                        <span class="material-symbols-outlined">dashboard</span> 
+                        <span>Overview</span> 
+                    </a> 
+                </li> 
+                <li> 
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-gray-50 transition-colors"> 
+                        <span class="material-symbols-outlined">shopping_cart</span> 
+                        <span>Orders</span> 
+                    </a> 
+                </li> 
+                <li> 
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-gray-50 transition-colors"> 
+                        <span class="material-symbols-outlined">inventory_2</span> 
+                        <span>Products</span> 
+                    </a> 
+                </li> 
+                <li> 
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-gray-50 transition-colors"> 
+                        <span class="material-symbols-outlined">group</span> 
+                        <span>Customers</span> 
+                    </a> 
+                </li> 
+                <li> 
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-gray-50 transition-colors"> 
+                        <span class="material-symbols-outlined">insights</span> 
+                        <span>Analytics</span> 
+                    </a> 
+                </li> 
+                <li> 
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-gray-50 transition-colors"> 
+                        <span class="material-symbols-outlined">settings</span> 
+                        <span>Settings</span> 
+                    </a> 
+                </li> 
+            </ul> 
+        </nav>  
+    </div>  
+    <div class="flex-1 flex flex-col overflow-hidden">  
+        <header class="bg-white border-b border-gray-100 shadow-sm z-10"> 
+            <div class="flex justify-between items-center px-4 py-3"> 
+                <div class="relative w-64"> 
+                    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span> 
+                    <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 bg-gray-50 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-primary-500 focus:bg-white transition-all"/> 
+                </div> 
+                <div class="flex items-center space-x-4"> 
+                    <div class="relative"> 
+                        <button class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors relative"> 
+                            <span class="material-symbols-outlined">notifications</span> 
+                            <span class="absolute top-1 right-1 w-4 h-4 bg-accent-500 rounded-full text-white text-xs flex items-center justify-center">3</span> 
+                        </button> 
+                    </div> 
+                    <details class="relative">
+                        <summary class="flex items-center space-x-2 cursor-pointer list-none"> 
+                            <div class="w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 font-semibold">JS</div> 
+                            <span>Maiwand</span> 
+                            <span class="material-symbols-outlined text-gray-400">arrow_drop_down</span> 
+                        </summary>
+                        <div class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 z-50 py-1"> 
+                            <a href="#" class="flex items-center space-x-2 px-4 py-2 hover:bg-gray-50 transition-colors">
+                                <span class="material-symbols-outlined">account_circle</span> 
+                                <span>Profile</span> 
+                            </a> 
+                            <a href="#" class="flex items-center space-x-2 px-4 py-2 hover:bg-gray-50 transition-colors"> 
+                                <span class="material-symbols-outlined">settings</span> 
+                                <span>Settings</span> 
+                            </a> 
+                            <div class="border-t border-gray-100 my-1"></div> 
+                            <a href="#" class="flex items-center space-x-2 px-4 py-2 hover:bg-gray-50 transition-colors text-red-500"> 
+                                <span class="material-symbols-outlined">logout</span> 
+                                <span>Logout</span> 
+                            </a> 
+                        </div> 
+                    </details> 
+                </div> 
+            </div> 
+        </header>  
+        <main class="flex-1 overflow-x-hidden overflow-y-auto bg-neutral-50 p-4 md:p-6"> <div class="flex flex-col md:flex-row items-center justify-between mb-6"> <h1 class="text-2xl font-bold mb-2 md:mb-0">Dashboard Overview</h1> <div class="flex space-x-2"> <div class="relative"> <details> <summary class="flex items-center space-x-2 bg-white border border-gray-200 rounded-lg px-4 py-2 cursor-pointer list-none"> <span>Last 30 days</span> <span class="material-symbols-outlined">arrow_drop_down</span> </summary> <div class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 z-10"> <a href="#" class="block px-4 py-2 hover:bg-gray-50 transition-colors">Today</a> <a href="#" class="block px-4 py-2 hover:bg-gray-50 transition-colors">Yesterday</a> <a href="#" class="block px-4 py-2 hover:bg-gray-50 transition-colors">Last 7 days</a> <a href="#" class="block px-4 py-2 hover:bg-gray-50 transition-colors">Last 30 days</a> <a href="#" class="block px-4 py-2 hover:bg-gray-50 transition-colors">This month</a> <a href="#" class="block px-4 py-2 hover:bg-gray-50 transition-colors">Custom range</a> </div> </details> </div> <button class="bg-white border border-gray-200 rounded-lg p-2 hover:bg-gray-50 transition-colors"> <span class="material-symbols-outlined">filter_list</span> </button> <button class="bg-white border border-gray-200 rounded-lg p-2 hover:bg-gray-50 transition-colors"> <span class="material-symbols-outlined">download</span> </button> </div> </div>  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6"> <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"> <div class="flex justify-between items-start mb-3"> <div> <p class="text-sm text-gray-500">Total Sales</p> <h3 class="text-2xl font-bold">$24,580</h3> </div> <div class="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center text-primary-600"> <span class="material-symbols-outlined">payments</span> </div> </div> <div class="flex items-center"> <span class="text-accent-500 flex items-center mr-2"> <span class="material-symbols-outlined text-sm">arrow_upward</span> 8.2% </span> <span class="text-sm text-gray-500">vs last period</span> </div> </div> <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"> <div class="flex justify-between items-start mb-3"> <div> <p class="text-sm text-gray-500">New Orders</p> <h3 class="text-2xl font-bold">154</h3> </div> <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600"> <span class="material-symbols-outlined">shopping_bag</span> </div> </div> <div class="flex items-center"> <span class="text-accent-500 flex items-center mr-2"> <span class="material-symbols-outlined text-sm">arrow_upward</span> 5.3% </span> <span class="text-sm text-gray-500">vs last period</span> </div> </div> <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"> <div class="flex justify-between items-start mb-3"> <div> <p class="text-sm text-gray-500">New Customers</p> <h3 class="text-2xl font-bold">98</h3> </div> <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600"> <span class="material-symbols-outlined">group_add</span> </div> </div> <div class="flex items-center"> <span class="text-accent-500 flex items-center mr-2"> <span class="material-symbols-outlined text-sm">arrow_upward</span> 12.4% </span> <span class="text-sm text-gray-500">vs last period</span> </div> </div> <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"> <div class="flex justify-between items-start mb-3"> <div> <p class="text-sm text-gray-500">Inventory Value</p> <h3 class="text-2xl font-bold">$125,430</h3> </div> <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600"> <span class="material-symbols-outlined">inventory</span> </div> </div> <div class="flex items-center"> <span class="text-red-500 flex items-center mr-2"> <span class="material-symbols-outlined text-sm">arrow_downward</span> 2.1% </span> <span class="text-sm text-gray-500">vs last period</span> </div> </div> </div>  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6"> <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 col-span-2 hover:shadow-md transition-shadow"> <div class="flex justify-between items-center mb-4"> <h3 class="font-semibold">Revenue Trends</h3> <div class="flex space-x-2"> <button class="text-sm px-3 py-1 rounded-full bg-primary-100 text-primary-600">Daily</button> <button class="text-sm px-3 py-1 rounded-full hover:bg-gray-100 transition-colors">Weekly</button> <button class="text-sm px-3 py-1 rounded-full hover:bg-gray-100 transition-colors">Monthly</button> </div> </div> <div class="h-64"> <div data-chart="chart_0"></div> </div> </div> <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"> <div class="flex justify-between items-center mb-4"> <h3 class="font-semibold">Top Products</h3> <button class="text-sm text-primary-600 hover:underline">View All</button> </div> <div class="h-64"> <div data-chart="chart_1"></div> </div> </div> </div>  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6"> <div class="lg:col-span-2 bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"> <div class="flex justify-between items-center mb-4"> <h3 class="font-semibold">Recent Orders</h3> <button class="text-sm text-primary-600 hover:underline">View All</button> </div> <div class="overflow-x-auto"> <table class="min-w-full"> <thead class="bg-gray-50 border-b border-gray-100"> <tr> <th class="text-left py-3 px-4 text-xs font-medium text-gray-500 uppercase tracking-wider">Order ID</th> <th class="text-left py-3 px-4 text-xs font-medium text-gray-500 uppercase tracking-wider">Customer</th> <th class="text-left py-3 px-4 text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th> <th class="text-left py-3 px-4 text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th> <th class="text-right py-3 px-4 text-xs font-medium text-gray-500 uppercase tracking-wider">Amount</th> <th class="text-right py-3 px-4 text-xs font-medium text-gray-500 uppercase tracking-wider">Action</th> </tr> </thead> <tbody class="divide-y divide-gray-100"> <tr class="hover:bg-gray-50 transition-colors"> <td class="py-3 px-4 whitespace-nowrap">#ORD-8547</td> <td class="py-3 px-4 whitespace-nowrap">Emily Johnson</td> <td class="py-3 px-4 whitespace-nowrap">May 14, 2023</td> <td class="py-3 px-4 whitespace-nowrap"> <span class="px-2 py-1 text-xs rounded-full bg-accent-100 text-accent-700">Completed</span> </td> <td class="py-3 px-4 whitespace-nowrap text-right">$124.00</td> <td class="py-3 px-4 whitespace-nowrap text-right"> <button class="text-gray-500 hover:text-primary-600"> <span class="material-symbols-outlined">more_horiz</span> </button> </td> </tr> <tr class="hover:bg-gray-50 transition-colors"> <td class="py-3 px-4 whitespace-nowrap">#ORD-8546</td> <td class="py-3 px-4 whitespace-nowrap">Michael Chen</td> <td class="py-3 px-4 whitespace-nowrap">May 14, 2023</td> <td class="py-3 px-4 whitespace-nowrap"> <span class="px-2 py-1 text-xs rounded-full bg-blue-100 text-blue-700">Processing</span> </td> <td class="py-3 px-4 whitespace-nowrap text-right">$67.50</td> <td class="py-3 px-4 whitespace-nowrap text-right"> <button class="text-gray-500 hover:text-primary-600"> <span class="material-symbols-outlined">more_horiz</span> </button> </td> </tr> <tr class="hover:bg-gray-50 transition-colors"> <td class="py-3 px-4 whitespace-nowrap">#ORD-8545</td> <td class="py-3 px-4 whitespace-nowrap">Sarah Williams</td> <td class="py-3 px-4 whitespace-nowrap">May 13, 2023</td> <td class="py-3 px-4 whitespace-nowrap"> <span class="px-2 py-1 text-xs rounded-full bg-amber-100 text-amber-700">Pending</span> </td> <td class="py-3 px-4 whitespace-nowrap text-right">$89.99</td> <td class="py-3 px-4 whitespace-nowrap text-right"> <button class="text-gray-500 hover:text-primary-600"> <span class="material-symbols-outlined">more_horiz</span> </button> </td> </tr> <tr class="hover:bg-gray-50 transition-colors"> <td class="py-3 px-4 whitespace-nowrap">#ORD-8544</td> <td class="py-3 px-4 whitespace-nowrap">David Garcia</td> <td class="py-3 px-4 whitespace-nowrap">May 13, 2023</td> <td class="py-3 px-4 whitespace-nowrap"> <span class="px-2 py-1 text-xs rounded-full bg-red-100 text-red-700">Cancelled</span> </td> <td class="py-3 px-4 whitespace-nowrap text-right">$53.25</td> <td class="py-3 px-4 whitespace-nowrap text-right"> <button class="text-gray-500 hover:text-primary-600"> <span class="material-symbols-outlined">more_horiz</span> </button> </td> </tr> <tr class="hover:bg-gray-50 transition-colors"> <td class="py-3 px-4 whitespace-nowrap">#ORD-8543</td> <td class="py-3 px-4 whitespace-nowrap">Lisa Brown</td> <td class="py-3 px-4 whitespace-nowrap">May 12, 2023</td> <td class="py-3 px-4 whitespace-nowrap"> <span class="px-2 py-1 text-xs rounded-full bg-accent-100 text-accent-700">Completed</span> </td> <td class="py-3 px-4 whitespace-nowrap text-right">$112.75</td> <td class="py-3 px-4 whitespace-nowrap text-right"> <button class="text-gray-500 hover:text-primary-600"> <span class="material-symbols-outlined">more_horiz</span> </button> </td> </tr> </tbody> </table> </div> </div> <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"> <div class="flex justify-between items-center mb-4"> <h3 class="font-semibold">Recent Activity</h3> <span class="px-2 py-1 text-xs rounded-full bg-red-100 text-red-600">5 new</span> </div> <div class="space-y-4"> <div class="flex space-x-3"> <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 flex-shrink-0"> <span class="material-symbols-outlined">shopping_bag</span> </div> <div> <p class="text-sm font-medium">New order received</p> <p class="text-xs text-gray-500">Order #ORD-8547 from Emily Johnson</p> <p class="text-xs text-gray-400 mt-1">2 minutes ago</p> </div> </div> <div class="flex space-x-3"> <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0"> <span class="material-symbols-outlined">payments</span> </div> <div> <p class="text-sm font-medium">Payment received</p> <p class="text-xs text-gray-500">$124.00 for order #ORD-8546</p> <p class="text-xs text-gray-400 mt-1">15 minutes ago</p> </div> </div> <div class="flex space-x-3"> <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 flex-shrink-0"> <span class="material-symbols-outlined">inventory</span> </div> <div> <p class="text-sm font-medium">Low stock alert</p> <p class="text-xs text-gray-500">Product &quot;Wireless Earbuds&quot; (SKU: WE-1234)</p> <p class="text-xs text-gray-400 mt-1">1 hour ago</p> </div> </div> <div class="flex space-x-3"> <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 flex-shrink-0"> <span class="material-symbols-outlined">person</span> </div> <div> <p class="text-sm font-medium">New customer registered</p> <p class="text-xs text-gray-500">Sarah Williams created an account</p> <p class="text-xs text-gray-400 mt-1">2 hours ago</p> </div> </div> <div class="flex space-x-3"> <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-600 flex-shrink-0"> <span class="material-symbols-outlined">assignment_return</span> </div> <div> <p class="text-sm font-medium">Return request</p> <p class="text-xs text-gray-500">David Garcia requested a return for order #ORD-8532</p> <p class="text-xs text-gray-400 mt-1">3 hours ago</p> </div> </div> </div> <button class="w-full mt-4 py-2 text-center text-sm text-primary-600 border border-primary-200 rounded-lg hover:bg-primary-50 transition-colors">View All Activity</button> </div> </div> </main> </div> </div></div>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        content: ["./src/**/*.{html,js}"],
+        theme: {"name":"Bluewave","fontFamily":{"sans":["Open Sans","ui-sans-serif","system-ui","sans-serif","\"Apple Color Emoji\"","\"Segoe UI Emoji\"","\"Segoe UI Symbol\"","\"Noto Color Emoji\""]},"extend":{"fontFamily":{"title":["Lato","ui-sans-serif","system-ui","sans-serif","\"Apple Color Emoji\"","\"Segoe UI Emoji\"","\"Segoe UI Symbol\"","\"Noto Color Emoji\""],"body":["Open Sans","ui-sans-serif","system-ui","sans-serif","\"Apple Color Emoji\"","\"Segoe UI Emoji\"","\"Segoe UI Symbol\"","\"Noto Color Emoji\""]},"colors":{"neutral":{"50":"#f7f7f7","100":"#eeeeee","200":"#e0e0e0","300":"#cacaca","400":"#b1b1b1","500":"#999999","600":"#7f7f7f","700":"#676767","800":"#545454","900":"#464646","950":"#282828"},"primary":{"50":"#f3f1ff","100":"#e9e5ff","200":"#d5cfff","300":"#b7a9ff","400":"#9478ff","500":"#7341ff","600":"#631bff","700":"#611bf8","800":"#4607d0","900":"#3c08aa","950":"#220174","DEFAULT":"#611bf8"}}},"fontSize":{"xs":["12px",{"lineHeight":"19.200000000000003px"}],"sm":["14px",{"lineHeight":"21px"}],"base":["16px",{"lineHeight":"25.6px"}],"lg":["18px",{"lineHeight":"27px"}],"xl":["20px",{"lineHeight":"28px"}],"2xl":["24px",{"lineHeight":"31.200000000000003px"}],"3xl":["30px",{"lineHeight":"36px"}],"4xl":["36px",{"lineHeight":"41.4px"}],"5xl":["48px",{"lineHeight":"52.800000000000004px"}],"6xl":["60px",{"lineHeight":"66px"}],"7xl":["72px",{"lineHeight":"75.60000000000001px"}],"8xl":["96px",{"lineHeight":"100.80000000000001px"}],"9xl":["128px",{"lineHeight":"134.4px"}]},"borderRadius":{"none":"0px","sm":"6px","DEFAULT":"12px","md":"18px","lg":"24px","xl":"36px","2xl":"48px","3xl":"72px","full":"9999px"},"spacing":{"0":"0px","1":"4px","2":"8px","3":"12px","4":"16px","5":"20px","6":"24px","7":"28px","8":"32px","9":"36px","10":"40px","11":"44px","12":"48px","14":"56px","16":"64px","20":"80px","24":"96px","28":"112px","32":"128px","36":"144px","40":"160px","44":"176px","48":"192px","52":"208px","56":"224px","60":"240px","64":"256px","72":"288px","80":"320px","96":"384px","px":"1px","0.5":"2px","1.5":"6px","2.5":"10px","3.5":"14px"}},
+        plugins: [],
+        important: '#webcrumbs'
+    };
+    </script>
+<script>new ApexCharts(document.querySelector('[data-chart="chart_0"]'),{"chart":{"type":"area","width":"100%","height":"250","toolbar":{"show":false},"zoom":{"enabled":false}},"dataLabels":{"enabled":false},"stroke":{"curve":"smooth","width":2},"colors":["#1F6FEB","#94A3B8"],"fill":{"type":"gradient","gradient":{"shadeIntensity":1,"opacityFrom":0.7,"opacityTo":0.2,"stops":[0,100]}},"xaxis":{"categories":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]},"tooltip":{"theme":"light"},"grid":{"borderColor":"#F1F5F9"},"series":[{"name":"Revenue","data":[4500,5200,4800,5900,6500,6200,7100,7800,7200,8400,9100,9800]},{"name":"Expenses","data":[2800,3100,2950,3300,3700,3500,3900,4200,4100,4500,4700,4900]}]}).render();new ApexCharts(document.querySelector('[data-chart="chart_1"]'),{"chart":{"type":"donut","width":"100%","height":"250","toolbar":{"show":false}},"labels":["Electronics","Clothing","Furniture","Others"],"colors":["#1F6FEB","#10B981","#F59E0B","#94A3B8"],"dataLabels":{"enabled":false},"legend":{"position":"bottom"},"tooltip":{"theme":"light"},"series":[42,28,16,14]}).render();</script>
+  </body>
+</html>
