@@ -3,7 +3,8 @@
 
 A modern, responsive, and data-driven dashboard built for managing an online store.  
 It provides real-time insights, interactive charts, and quick management actions — all in one clean interface.
-
+---
+<img width="1799" height="1360" alt="Dashboard" src="https://github.com/user-attachments/assets/5cc8efb2-a3c4-456a-8521-2a9d8186601b" />
 ---
 
 ## 🚀 Features
