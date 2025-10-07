@@ -6,6 +6,7 @@ It provides real-time insights, interactive charts, and quick management actions
 
 ---
 <img width="1799" height="1360" alt="Dashboard" src="https://github.com/user-attachments/assets/5cc8efb2-a3c4-456a-8521-2a9d8186601b" />
+
 ---
 
 ## 🚀 Features
